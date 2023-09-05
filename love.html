@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap" rel="stylesheet">
+  </head>
+<body class="bg-light">
+
+<div class="container">
+
+<h1 class="text-center ggg">crud system</h1>
+
+
+
+    <!--form-->
+    <div class="mb-3">
+        <label for="productnameInput" class="form-label">productname :</label>
+        <input type="text" class="form-control" id="productnameInput" placeholder="Example input placeholder">
+      </div>
+      <div class="mb-3">
+        <label for="productpriceInput" class="form-label">productprice :</label>
+        <input type="number" class="form-control" id="productpriceInput" placeholder="Another input placeholder">
+      </div>
+      <div class="mb-3">
+        <label for="productcategryInput" class="form-label"> productcategry :</label>
+        <input type="text" class="form-control" id="productcategryInput" placeholder="Example input placeholder">
+      </div>
+      <div class="mb-3">
+        <label for="productdiscInput" class="form-label">productdisc :</label>
+        <input type="text" class="form-control" id="productdiscInput" placeholder="Another input placeholder">
+      </div>
+      <label for="myfile" class="form-label vw-25">Select a img:</label>
+      <input type="file"class="form-control" id="myfileimg" name="myfile" accept="image/png, image/jpeg"><br>
+
+      <button onclick="addproduct()" class="btn btn-primary" type="submit">ADD PRODUCT</button>
+<div class="w-75 mx-auto py-5">
+
+
+  <table class="table text-center">
+<thead>
+  <th> index</th>
+  <th> name</th>
+  <th> price</th>
+  <th>category</th>
+  <th>desc</th>
+  <th>img</th>
+  <th> delete</th>
+    <th>update</th>
+</thead>
+<tbody id="tabody">
+
+
+  
+</tbody>
+  </table>
+</div>
+</div>
+<!--js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
